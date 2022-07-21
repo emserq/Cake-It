@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cakeit2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CakeIt2">
+        <activity
+            android:name=".PurchaseHistory"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTotalSales"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCustomCupCakeOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCustomRollCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPickupCustom"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCustomCakeOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderCustomCupCake"
+            android:exported="false" />
+        <activity
+            android:name=".OrderCustomRollCake"
+            android:exported="false" />
+        <activity
+            android:name=".OrderCustomCake"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmationCupCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomCupCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectedCupCake"
+            android:exported="false" />
+        <activity
+            android:name=".AddCupCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSelectedCupCake"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManageCupCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeCupCake"
+            android:exported="false" />
+        <activity
+            android:name=".AdminOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSelectedRollCake"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManageRollCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestingLoadImage"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSelectedCake"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManageCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmationRollCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomRollCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectedRollCake"
+            android:exported="false" />
+        <activity
+            android:name=".AddRollCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectedCake"
+            android:exported="false" />
+        <activity
+            android:name=".HomeRollCake"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmationCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddCakeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+    </application>
+
+</manifest>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkwhite"
+    tools:context=".AddCupCakeActivity">
+
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:elevation="3dp"
+        android:background="@color/white"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btn_cupcakeCollection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Collection"
+                android:background="@drawable/button_light_radius10"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btn_addCake"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:text="Add Rollcake"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/topcurve"
+        android:elevation="3dp"
+        android:paddingStart="40dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="40dp">
+
+        <EditText
+            android:id="@+id/etCupCakeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:hint="Cupcake name"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/navigation"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/destag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etCupCakeName"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Description"
+            android:textColor="@color/navigation"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/etCupCakeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@id/destag"
+            android:layout_marginTop="-4dp"
+            android:background="@drawable/outline"
+            android:fontFamily="@font/poppins"
+            android:gravity="start|top"
+            android:hint="Enter here"
+            android:padding="10dp"
+            android:textColor="@color/navigation"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etCupCakeDescription"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Price:"
+                android:textColor="@color/navigation"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etCupCakePrice"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Digit only"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddCupCake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_mintviolet_radius10"
+            android:backgroundTint="@color/main"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Add Cupcake"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivInsertCupCakeImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/button_light_radius20"
+        android:elevation="4dp"
+        app:shapeAppearanceOverlay="@style/semiround" />
+
+
+
+</RelativeLayout>

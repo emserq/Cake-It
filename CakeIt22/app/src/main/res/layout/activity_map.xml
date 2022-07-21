@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/navigation"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/mapTomap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_mintviolet_radius20"
+            android:backgroundTint="@color/main"
+            android:src="@drawable/ic_location_normal"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/mapTohome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_light_radius20"
+            android:src="@drawable/ic_home_normal"
+            app:tint="@color/navigation" />
+
+        <ImageButton
+            android:id="@+id/mapTocustom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_light_radius20"
+            android:src="@drawable/ic_edit_normal"
+            app:tint="@color/navigation" />
+
+        <ImageButton
+            android:id="@+id/mapToprofile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_light_radius20"
+            android:src="@drawable/ic_user_normal"
+            app:tint="@color/navigation" />
+
+    </LinearLayout>
+
+</RelativeLayout>

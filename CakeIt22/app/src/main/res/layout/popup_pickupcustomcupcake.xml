@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/card"
+    android:background="@drawable/radiusfill_10"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order ID: #"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp"
+            android:textColor="@color/navigation"/>
+
+        <TextView
+            android:id="@+id/tvOrderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66666"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20dp"
+            android:textColor="@color/navigation"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#DACFCF"/>
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/navigation"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:fontFamily="@font/poppins"
+            android:textSize="11dp"
+            android:textColor="@color/navigation"/>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:fontFamily="@font/poppins"
+            android:textSize="11dp"
+            android:textColor="@color/navigation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact: "
+            android:fontFamily="@font/poppins"
+            android:textSize="11dp"
+            android:textColor="@color/navigation"/>
+
+        <TextView
+            android:id="@+id/tvUserContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000000000"
+            android:fontFamily="@font/poppins"
+            android:textSize="11dp"
+            android:textColor="@color/navigation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: "
+            android:fontFamily="@font/poppins"
+            android:textSize="11dp"
+            android:textColor="@color/navigation"/>
+
+        <TextView
+            android:id="@+id/tvItemQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:fontFamily="@font/poppins"
+            android:textSize="11dp"
+            android:textColor="@color/navigation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: ₱"
+            android:fontFamily="@font/poppins"
+            android:textSize="11dp"
+            android:textColor="@color/navigation"/>
+
+        <TextView
+            android:id="@+id/tvItemTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000"
+            android:fontFamily="@font/poppins"
+            android:textSize="11dp"
+            android:textColor="@color/navigation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=".00"
+            android:fontFamily="@font/poppins"
+            android:textSize="11dp"
+            android:textColor="@color/navigation"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#DACFCF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="11dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/navigation"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sponge: "
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="11dp"
+                    android:textColor="@color/navigation"/>
+
+                <TextView
+                    android:id="@+id/tvSponge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chocolate"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="11dp"
+                    android:textColor="@color/navigation"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frosting: "
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="11dp"
+                    android:textColor="@color/navigation"/>
+
+                <TextView
+                    android:id="@+id/tvFrosting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ube"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="11dp"
+                    android:textColor="@color/navigation"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Candles: "
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="11dp"
+                    android:textColor="@color/navigation"/>
+
+                <TextView
+                    android:id="@+id/tvCandles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="11dp"
+                    android:textColor="@color/navigation"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filling: "
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="11dp"
+                    android:textColor="@color/navigation"/>
+
+                <TextView
+                    android:id="@+id/tvFilling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vanilla"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="11dp"
+                    android:textColor="@color/navigation"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toppings: "
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="11dp"
+                    android:textColor="@color/navigation"/>
+
+                <TextView
+                    android:id="@+id/tvToppings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Milk Chocolate"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="11dp"
+                    android:textColor="@color/navigation"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="#DACFCF"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_endTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="End Transaction"
+        android:fontFamily="@font/poppins_medium"
+        android:background="@drawable/button_darkmintyellow_radius10"
+        android:backgroundTint="@color/mintyellow"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="11dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textColor="@color/navigation"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

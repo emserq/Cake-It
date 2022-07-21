@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomCupCakeActivity">
+
+    <!--HIDDEN TEXTVIEWS AS VARIABLE -->
+    <TextView
+        android:id="@+id/selected_sponge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/selected_filling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/selected_frosting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/selected_toppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/selected_candles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/mintgreen"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_toEndOf="@id/btn_back"
+            android:fontFamily="@font/poppins_bold"
+            android:lineHeight="30dp"
+            android:text="Make your own \ncup cake"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darkwhite"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/customizebg"
+                android:elevation="4dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/spongeflavor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Sponge flavor"
+                    android:textColor="@color/navigation"
+                    android:textSize="15dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgSpongeFlavor"
+                    android:layout_width="300dp"
+                    android:layout_height="240dp"
+                    android:layout_below="@id/spongeflavor"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeVanilla"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Vanilla"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeChocolate"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Chocolate"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeUbe"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Ube"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeCoffee"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Coffee"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeMilkChocolate"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Milk Chocolate"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpongePandan"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Pandan"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeOrange"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-240dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Orange"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeBanana"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Banana"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeDarkChocolate"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Dark Chocolate"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeStrawberry"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Strawberry"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeCheese"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cheese"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpongeBlueberry"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Blue berry"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/customizebg"
+                android:elevation="4dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/fillingflavor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Filling flavor"
+                    android:textColor="@color/navigation"
+                    android:textSize="15dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgFillingFlavor"
+                    android:layout_width="300dp"
+                    android:layout_height="240dp"
+                    android:layout_below="@id/fillingflavor"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbFillingVanilla"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Vanilla"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFillingChocolate"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Chocolate"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFillingUbe"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Ube"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFillingCoffee"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Coffee"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/rbFillingMilkChocolate"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Milk Chocolate"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFillingPandan"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Pandan"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFillingOrange"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-240dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Orange"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFillingBanana"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Banana"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFillingDarkChocolate"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Dark Chocolate"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFillingStrawberry"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Strawberry"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFillingCheese"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cheese"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFillingBlueberry"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Blue berry"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:buttonTint="@color/mintgreen"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/customizebg"
+                android:elevation="4dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/frostingflavor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/mintgreen"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Frosting flavor"
+                    android:textColor="@color/navigation"
+                    android:textSize="15dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgFrostingFlavor"
+                    android:layout_width="300dp"
+                    android:layout_height="240dp"
+                    android:buttonTint="@color/mintgreen"
+                    android:layout_below="@id/frostingflavor"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingVanilla"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Vanilla"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingChocolate"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Chocolate"
+                        android:buttonTint="@color/mintgreen"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingUbe"
+                        android:layout_width="135dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Ube"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingCoffee"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Coffee"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingMilkChocolate"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/poppins"
+                        android:buttonTint="@color/mintgreen"
+                        android:text="Milk Chocolate"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingPandan"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/poppins"
+                        android:buttonTint="@color/mintgreen"
+                        android:text="Pandan"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingOrange"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-240dp"
+                        android:fontFamily="@font/poppins"
+                        android:text="Orange"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingBanana"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/poppins"
+                        android:text="Banana"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingDarkChocolate"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/poppins"
+                        android:text="Dark Chocolate"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingStrawberry"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/poppins"
+                        android:text="Strawberry"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingCheese"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cheese"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFrostingBlueberry"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:layout_gravity="end"
+                        android:fontFamily="@font/poppins"
+                        android:text="Blue berry"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/customizebg"
+                android:elevation="4dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/toppings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Toppings"
+                    android:textColor="@color/navigation"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/toppings"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/toppings"
+                    android:fontFamily="@font/poppins"
+                    android:text="( up to 3 )"
+                    android:textColor="@color/text"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgToppings"
+                    android:layout_width="300dp"
+                    android:layout_height="160dp"
+                    android:layout_below="@id/toppings"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbSprinkles"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Sprinkles"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbAssortedFruits"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Assorted Fruits"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPowderedSugar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Powdered sugar"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPowderedMilk"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Powdered milk"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbCookiesnCream"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-160dp"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cookies n Cream"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbBerrynNuts"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Berry and Nuts"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbChocolateCurls"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Chocolate curls"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbFlowerIcing"
+                        android:layout_width="135dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:buttonTint="@color/mintgreen"
+                        android:fontFamily="@font/poppins"
+                        android:text="Flower icing"
+                        android:textColor="@color/navigation"
+                        android:textSize="13dp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/customizebg"
+                android:elevation="4dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/candle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Candles"
+                    android:textColor="@color/navigation"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/etCandle"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/candle"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/candlesborder"
+                    android:gravity="start|top"
+                    android:hint="Name/numbers"
+                    android:padding="10dp"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radiusfill_10"
+                android:backgroundTint="@color/mintgreen"
+                android:fontFamily="@font/poppins"
+                android:text="Proceed"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

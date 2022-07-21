@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "377992862737",
+    "project_id": "cake-it-2",
+    "storage_bucket": "cake-it-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377992862737:android:1f97a41e81ef0d265325b0",
+        "android_client_info": {
+          "package_name": "com.example.cakeit2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377992862737-5v452cjbu06t0mti9c8p7sh0gm0pj4s4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCroa6412d29V17aC4R-D_tYeQgeAjCtp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377992862737-5v452cjbu06t0mti9c8p7sh0gm0pj4s4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CustomActivity">
+
+    <ImageView
+        android:id="@+id/bar"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_alignTop="@id/title"
+        android:layout_alignBottom="@id/title"
+        android:background="@color/navigation"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/bar"
+        android:fontFamily="@font/poppins_bold"
+        android:lineHeight="30dp"
+        android:text="Create your own \ndesign"
+        android:textColor="@color/navigation"
+        android:textSize="35dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/btn_customCake"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_darkmintyellow_radius30"
+            android:elevation="4dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="#FFDBA9"
+                android:elevation="2dp"
+                android:src="@drawable/model_cake"
+                android:translationZ="1dp"
+                app:shapeAppearanceOverlay="@style/round" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/curve_top"
+                android:backgroundTint="@color/mintyellow" />
+
+            <LinearLayout
+                android:id="@+id/customCake"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/curve_bottom"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Cake"
+                    android:textColor="@color/navigation"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Bring your creaty to life"
+                    android:textColor="@color/navigation"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_customRollCake"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/btn_customCake"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/customradius"
+            android:elevation="4dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="#FBD7E1"
+                android:elevation="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/model_rollcake"
+                android:translationZ="1dp"
+                app:shapeAppearanceOverlay="@style/round" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/curve_top"
+                android:backgroundTint="@color/mintpink" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/curve_bottom"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:lineHeight="16dp"
+                    android:text="Roll Cake"
+                    android:textColor="@color/navigation"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Imagination has no limit"
+                    android:textColor="@color/navigation"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_customCupcake"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/customradius"
+            android:elevation="4dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="#C3F6E9"
+                android:elevation="2dp"
+                android:src="@drawable/model_cupcake"
+                android:translationZ="01dp"
+                app:shapeAppearanceOverlay="@style/round" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/curve_top"
+                android:backgroundTint="@color/mintgreen" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/curve_bottom"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:lineHeight="16dp"
+                    android:text="Cupcake"
+                    android:textColor="@color/navigation"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="The possibility are endless"
+                    android:textColor="@color/navigation"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/navigation"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/customTomap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_location_normal"
+            android:background="@drawable/button_light_radius20"
+            app:tint="@color/navigation" />
+
+        <ImageButton
+            android:id="@+id/customTohome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_light_radius20"
+            android:src="@drawable/ic_home_normal"
+            app:tint="@color/navigation" />
+
+        <ImageButton
+            android:id="@+id/customTocustom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_mintviolet_radius20"
+            android:src="@drawable/ic_edit_normal"
+            android:backgroundTint="@color/main"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/customToprofile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_light_radius20"
+            android:src="@drawable/ic_user_normal"
+            app:tint="@color/navigation" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

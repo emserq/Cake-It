@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/headest"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:elevation="40dp"
+        android:paddingTop="7dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Profile"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/navigation"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/headest"
+        android:layout_marginTop="0dp"
+        android:background="@color/main"
+        android:gravity="center">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_user_normal"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivProfileImage"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Euro C. Abao"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tvProfileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvProfileName"
+            android:layout_marginTop="-15dp"
+            android:layout_toRightOf="@id/ivProfileImage"
+            android:fontFamily="@font/poppins"
+            android:text="abaoeuro@gmail.com"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llCart"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/head"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-70dp"
+        android:background="@drawable/button_light_radius20"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_shopping_cart"
+            app:tint="@color/navigation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="My Cart"
+            android:textColor="@color/navigation"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOrders"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/head"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_light_radius20"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_box"
+            app:tint="@color/navigation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Orders"
+            android:textColor="@color/navigation"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llCart"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Other info:"
+        android:textColor="@color/navigation"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:drawableStart="@drawable/ic_profilecontact"
+            android:drawableTint="@color/navigation" />
+
+        <TextView
+            android:id="@+id/tvProfileContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="09395232210"
+            android:textColor="@color/navigation"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:drawableStart="@drawable/ic_profilelocation"
+            android:drawableTint="@color/navigation" />
+
+        <TextView
+            android:id="@+id/tvProfileAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="San Pedro East, Rosales, Pangasinan"
+            android:textColor="@color/navigation"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/address"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@id/llCart"
+        android:layout_alignEnd="@id/llOrders"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/btn_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider2"
+        android:layout_alignStart="@id/address"
+        android:background="@drawable/button_light_radius20"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_history"
+            app:tint="@color/navigation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="Purchase History"
+            android:textColor="@color/navigation"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_history"
+        android:layout_alignStart="@id/address"
+        android:background="@drawable/button_light_radius20"
+        android:layout_marginLeft="7dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/logouticon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_logout"
+            app:tint="@color/navigation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="Logout"
+            android:textColor="@color/navigation"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/navigation"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/profileTomap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_location_normal"
+            android:background="@drawable/button_light_radius20"
+            app:tint="@color/navigation" />
+
+        <ImageButton
+            android:id="@+id/profileTohome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_light_radius20"
+            android:src="@drawable/ic_home_normal"
+            app:tint="@color/navigation" />
+
+        <ImageButton
+            android:id="@+id/profileTocustom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_light_radius20"
+            android:src="@drawable/ic_edit_normal"
+            app:tint="@color/navigation" />
+
+        <ImageButton
+            android:id="@+id/profileToprofile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_mintviolet_radius20"
+            android:backgroundTint="@color/main"
+            android:src="@drawable/ic_user_normal"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
